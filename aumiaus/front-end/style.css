@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #F4B3E2;
+    color: #000075;
+}
+
+/* Limita a largura dos elementos do body */
+body > * {
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Estilo em comum: header e section */
+header,
+section {
+    background-color: #9FE19B;
+    border: 5px solid #DDE872;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0 30px;
+}
+
+/* Ajustes do header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo da imagem no header */
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Títulos com mesmo estilo de cor */
+h1, h2, h3, h4 {
+    color: #000075;
+    text-align: center;
+}
+
+/* Parágrafos e listas */
+p, ul {
+    font-size: large;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Links */
+a {
+    color: #000075;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.espaco {
+    margin-bottom: 20px; /* espaço de 20px abaixo */
+}
+/*espaçamento e negrito*/
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+/*Ajustes nas areas de texto*/
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #DDE872;
+    border-radius: 8px;
+    font-size: 16px;
+}
+/*Ajustes no botão*/
+button {
+    margin-top: 20px;
+    width: 50%;
+    padding: 12px;
+    background-color: #9FE19B;
+    color: #000075;
+    border: 2px solid #000075;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #DDE872;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+}
